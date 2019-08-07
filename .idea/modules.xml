@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/MutantDetector.iml" filepath="$PROJECT_DIR$/.idea/MutantDetector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/main/main.iml" filepath="$PROJECT_DIR$/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mutant-detector.iml" filepath="$PROJECT_DIR$/mutant-detector.iml" />
     </modules>
   </component>
 </project>
