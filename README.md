@@ -11,7 +11,7 @@ Ejemplos
 
 ADN Humano
 {
-"dna":["ASDFGD","CDFGTR","JGUDYC","SLFUVF","SDKEJC","ASDKSC"]
+"dna":["AGTCGA","GTCAGA","GATGCG","GGACTA","GATACG","AGTCGA"]
 }
 
 ADN Mutante
