@@ -20,9 +20,9 @@ public class MutantDetectorController {
             @ApiResponse(code = 403, message = "No mutante")
     })
     public ResponseEntity mutant(@RequestBody @ApiParam(value = "Contenedor de ADN", required = true) DNARequest dnaRequest){
-        if(!(new DNAMutantValidator()).isMutant(dnaRequest.getDna()))
-            return ResponseEntity.status(HttpStatus.FORBIDDEN).body(null);
-        return ResponseEntity.ok().body(null);
+        if((new DNAMutantValidator()).isMutant(dnaRequest.getDna()))
+            return ResponseEntity.ok().body(null);
+        return ResponseEntity.status(HttpStatus.FORBIDDEN).body(null);
     }
 
 }
