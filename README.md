@@ -6,3 +6,15 @@ Este es un ejercicio para demostrar conceptos basicos de un servicio REST con ci
 ## Navegar Detalles del Servicio
 
 https://mutant-detector-ml.herokuapp.com/swagger-ui.html#/mutant-detector-controller/mutantUsingPOST
+
+Ejemplos
+
+ADN Humano
+{
+"dna":["ASDFGD","CDFGTR","JGUDYC","SLFUVF","SDKEJC","ASDKSC"]
+}
+
+ADN Mutante
+{
+"dna":["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
+}
