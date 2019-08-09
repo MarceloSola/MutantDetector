@@ -7,6 +7,6 @@ spring:
   jpa:
       hibernate:
         ddlAuto: validate
-       jdbc:
-        lob:
-          non_contextual_creation: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
