@@ -31,13 +31,21 @@ mvn spring-boot:run
 
 La implementacion esta deployada en mutant-detector-ml.herokuapp.com. En caso de usar la version local, hay que reemplazar por localhost:8080
 
-## Navegar Detalles del Servicio
+## Navegar Detalles del Servicio (permite evaluar las APIs)
 
 https://mutant-detector-ml.herokuapp.com/swagger-ui.html#/Validador_de_ADN_Mutante
 
-## Ejecutar desde linea de comando
+## Ejecutar validador desde CURL 
 
 curl -X POST "https://mutant-detector-ml.herokuapp.com/mutant" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTATGT\",\"AGAAGG\",\"CCCCTA\",\"TCACTG\"] }"
+
+## Ejecutar reporte desde CURL
+
+curl -X GET "https://mutant-detector-ml.herokuapp.com/stats" -H "accept: application/json"
+
+### Directamente desde el Browser
+
+https://mutant-detector-ml.herokuapp.com/stats
 
 ## Ejemplos
 
