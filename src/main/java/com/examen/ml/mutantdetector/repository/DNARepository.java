@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface DNARepository extends JpaRepository<DNAValidationReg, DNARequest> {
+public interface DNARepository extends JpaRepository<DNAValidationReg, String> {
 
     //@Query("SELECT new com.examen.ml.mutantdetector.entity.DNAStats(CASE WHEN ")
     //DNAStats getStatsRepo();
