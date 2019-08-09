@@ -2,6 +2,7 @@ package com.examen.ml.mutantdetector.endpoint;
 
 import com.examen.ml.mutantdetector.business.DNAMutantValidator;
 import com.examen.ml.mutantdetector.entity.DNARequest;
+import com.examen.ml.mutantdetector.entity.DNAStatResult;
 import com.examen.ml.mutantdetector.entity.DNAStats;
 import com.examen.ml.mutantdetector.entity.DNAValidationReg;
 import com.examen.ml.mutantdetector.repository.DNARepository;
@@ -33,8 +34,8 @@ public class MutantDetectorController {
         return ResponseEntity.status(HttpStatus.FORBIDDEN).body(null);
     }
 
-    /*@GetMapping(value = "/stats", produces = MediaType.APPLICATION_JSON_VALUE)
-    public DNAStats stats(){
-
-    }*/
+    @GetMapping(value = "/stats", produces = MediaType.APPLICATION_JSON_VALUE)
+    public DNAStatResult stats(){
+        return new DNAStatResult(dnaRepository.getStatsRepo());
+    }
 }
