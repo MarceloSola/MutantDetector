@@ -6,9 +6,9 @@ Este es un ejercicio para demostrar conceptos basicos de un servicio REST con ci
 
 ## Requerimientos
 
-JDK 1.8
-Maven 3.3.9
-Lombok 1.18.8 (Para IDE)
+* JDK 1.8
+* Maven 3.3.9
+* Lombok 1.18.8 (Para IDE)
 
 ## Compilacion
 
@@ -16,14 +16,15 @@ mvn clean install
 
 ## Ejecucion
 Definir datos de conexion a la Postgre usando variabls en entorno o como parametro del sistema en el comando de ejecucion con los siguientes nombres
-    JDBC_DATABASE_URL
-    JDBC_DATABASE_USERNAME
-    JDBC_DATABASE_PASSWORD
 
-Usando java
+    * JDBC_DATABASE_URL
+    * JDBC_DATABASE_USERNAME
+    * JDBC_DATABASE_PASSWORD
+
+### Usando java
 java -jar target/mutant-detector-1.0-SNAPSHOT.jar
 
-Usando maven
+### Usando maven
 mvn spring-boot:run
 
 # Consumir la API
