@@ -5,7 +5,7 @@ Este es un ejercicio para demostrar conceptos basicos de un servicio REST con ci
 
 ## Navegar Detalles del Servicio
 
-https://mutant-detector-ml.herokuapp.com/swagger-ui.html#/mutant-detector-controller/mutantUsingPOST
+https://mutant-detector-ml.herokuapp.com/swagger-ui.html#/Validador%20de%20ADN%20Mutante/mutantUsingPOST
 
 Ejemplos
 
