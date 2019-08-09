@@ -43,7 +43,7 @@ curl -X POST "https://mutant-detector-ml.herokuapp.com/mutant" -H "accept: */*" 
 
 ADN Humano
 {
-"dna":["AGTCGA","GTCAGA","GATGCG","GGACTA","GATACG","AGTCGA"]
+"dna":["AGTCGA","GTCAGA","GATCCG","TGACTA","GATCCG","AGTCGA"]
 }
 
 ADN Mutante
