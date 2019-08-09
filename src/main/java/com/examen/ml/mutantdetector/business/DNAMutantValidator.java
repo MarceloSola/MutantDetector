@@ -1,7 +1,14 @@
 package com.examen.ml.mutantdetector.business;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class DNAMutantValidator {
+
+    Logger log = LoggerFactory.getLogger(DNAMutantValidator.class);
+
     public boolean isMutant(String[] dna) {
+        log.info("Mutant Validation Request");
         int[][] quantH=new int[dna[0].length()][dna.length];
         int[][] quantV=new int[dna[0].length()][dna.length];
         int[][] quantDR=new int[dna[0].length()][dna.length];
